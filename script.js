@@ -41,7 +41,7 @@ function check() {
         document.body.style.backgroundImage = "url(https://c.tenor.com/neN_tP5qn4YAAAAd/walter-white-shocked.gif)"
        //Loss//
         if (score <= 0) {
-          messageObj.textContent = "You lost... Patrick is after you.";
+          messageObj.textContent = "You lost... Patrick is upset.";
           document.body.style.backgroundImage = "url(https://c.tenor.com/SyPi04ISpD0AAAAd/patrick-bateman.gif)"
          document.querySelector(".number").textContent = randNum;
         }
@@ -53,7 +53,7 @@ function check() {
         document.body.style.backgroundImage = "url(https://c.tenor.com/neN_tP5qn4YAAAAd/walter-white-shocked.gif)"
         //Loss//
         if (score <= 0) {
-          messageObj.textContent = "You lost... Patrick is after you.";
+          messageObj.textContent = "You lost... Patrick is upset.";
           document.body.style.backgroundImage = "url(https://c.tenor.com/SyPi04ISpD0AAAAd/patrick-bateman.gif)"
           document.querySelector(".number").textContent = randNum;
         }
@@ -65,7 +65,7 @@ function check() {
         document.body.style.backgroundImage = "url(https://c.tenor.com/do8q_eYrsW4AAAAM/crying-black-guy-meme.gif)"
         //Loss//
         if (score <= 0) {
-          messageObj.textContent = "You lost... Patrick is after you.";
+          messageObj.textContent = "You lost... Patrick is upset.";
           document.body.style.backgroundImage = "url(https://c.tenor.com/SyPi04ISpD0AAAAd/patrick-bateman.gif)"
           document.querySelector(".number").textContent = randNum;
         }
@@ -77,7 +77,7 @@ function check() {
         document.body.style.backgroundImage = "url(https://c.tenor.com/do8q_eYrsW4AAAAM/crying-black-guy-meme.gif)"
         //Loss//
         if (score <= 0) {
-          messageObj.textContent = "You lost... Patrick is after you.";
+          messageObj.textContent = "You lost... Patrick is upset.";
           document.body.style.backgroundImage = "url(https://c.tenor.com/SyPi04ISpD0AAAAd/patrick-bateman.gif)"
           document.querySelector(".number").textContent = randNum;
         }
