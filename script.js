@@ -23,17 +23,18 @@ let highscoreObj = document.querySelector(".highscore")
 function check() {
     let guess = Number(document.querySelector(".guess").value);
 
-    if (guess === randNum) {
+      //loss condition//
+    if (guess === randNum && score <= 0) {
+      messageObj.textContent = "You already lost... You can't win now!";
+      document.body.style.backgroundImage = "url(https://c.tenor.com/SyPi04ISpD0AAAAd/patrick-bateman.gif)"
+      document.querySelector(".number").textContent = randNum;
+    }
+
+    if (guess === randNum && score > 0) {
       //alert('win')
       messageObj.textContent = "You win! LET'S GO!!!";
       document.body.style.backgroundImage = "url(https://c.tenor.com/cS5jqwPsXAwAAAAd/high-five-walter-white.gif)"
       document.querySelector(".number").textContent = randNum;
-      //loss condition//
-      if (score <= 0) {
-        messageObj.textContent = "You lost... Patrick is upset.";
-        document.body.style.backgroundImage = "url(https://c.tenor.com/SyPi04ISpD0AAAAd/patrick-bateman.gif)"
-        document.querySelector(".number").textContent = randNum;
-      }
       //highscore//
       if (score > highscore) {
         highscore = score;
