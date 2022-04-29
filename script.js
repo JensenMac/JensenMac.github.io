@@ -21,8 +21,8 @@ let highscore = 0
 let highscoreObj = document.querySelector(".highscore")
 
 function check() {
-  if (score >= 0) { //This makes it so that losing doesn't let you keep guessing//
     let guess = Number(document.querySelector(".guess").value);
+
     if (guess === randNum) {
       //alert('win')
      messageObj.textContent = "You win! LET'S GO!!!";
@@ -84,7 +84,7 @@ function check() {
     } else {
       alert("Code brokey :(")
     }
-  }
+
 }
 
 function again() {
