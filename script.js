@@ -25,9 +25,15 @@ function check() {
 
     if (guess === randNum) {
       //alert('win')
-     messageObj.textContent = "You win! LET'S GO!!!";
-     document.body.style.backgroundImage = "url(https://c.tenor.com/cS5jqwPsXAwAAAAd/high-five-walter-white.gif)"
-     document.querySelector(".number").textContent = randNum;
+      messageObj.textContent = "You win! LET'S GO!!!";
+      document.body.style.backgroundImage = "url(https://c.tenor.com/cS5jqwPsXAwAAAAd/high-five-walter-white.gif)"
+      document.querySelector(".number").textContent = randNum;
+      //loss condition//
+      if (score <= 0) {
+        messageObj.textContent = "You lost... Patrick is upset.";
+        document.body.style.backgroundImage = "url(https://c.tenor.com/SyPi04ISpD0AAAAd/patrick-bateman.gif)"
+        document.querySelector(".number").textContent = randNum;
+      }
       //highscore//
       if (score > highscore) {
         highscore = score;
