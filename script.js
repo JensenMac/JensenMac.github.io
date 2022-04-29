@@ -30,7 +30,7 @@ function check() {
       document.querySelector(".number").textContent = randNum;
     }
 
-    if (guess === randNum && score > 0) {
+    if (guess === randNum && score >= 1) {
       //alert('win')
       messageObj.textContent = "You win! LET'S GO!!!";
       document.body.style.backgroundImage = "url(https://c.tenor.com/cS5jqwPsXAwAAAAd/high-five-walter-white.gif)"
