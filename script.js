@@ -34,7 +34,7 @@ function check() {
         highscoreObj.textContent = highscore
       }
     } else if (guess +1 == randNum || guess +2 == randNum || guess +3 == randNum) {
-        //alert('slightly too high')
+        //alert('slightly too high!')
        messageObj.textContent = "So close! Your guess is a bit too low!";
         score -= 1;
         scoreObj.textContent = score;
